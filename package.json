@@ -1,0 +1,19 @@
+{
+  "name": "cli-app-gastos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroTorales/cliAppGastosNode.Js.git"
+  },
+  "author": "Leandro-Torales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroTorales/cliAppGastosNode.Js/issues"
+  },
+  "homepage": "https://github.com/LeandroTorales/cliAppGastosNode.Js#readme"
+}
