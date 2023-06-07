@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
-import { readFileFS } from "../readFileOrWriteFilePromiseFS/readFileFS.js";
-import { writeFileFS } from "../readFileOrWriteFilePromiseFS/writeFileFS.js";
+import { readFileFS } from "../../readFileOrWriteFilePromiseFS/readFileFS.js";
+import { writeFileFS } from "../../readFileOrWriteFilePromiseFS/writeFileFS.js";
 
 const inputImportGasto = [
   {
@@ -17,7 +17,7 @@ const inputImportGasto = [
   },
 ];
 
-export const askImportOfGastoPromp = async (gastoCategory) => {
+export const askImportOfGastoPrompt = async (gastoCategory) => {
   const readFile = await readFileFS("./gastos.json");
   const run = await inquirer.prompt(inputImportGasto);
   const importe = run.importe;

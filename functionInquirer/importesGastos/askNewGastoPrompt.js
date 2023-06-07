@@ -1,5 +1,5 @@
 import inquirer from "inquirer";
-import { askImportOfGastoPromp } from "./askImportOfGastoPrompt.js";
+import { askImportOfGastoPrompt } from "./askImportOfGastoPrompt.js";
 
 const listOptionsGastosInquirer = [
   {
@@ -14,7 +14,7 @@ export const askNewGastoPrompt = async () => {
   return new Promise((resolve, reject) => {
     try {
       inquirer.prompt(listOptionsGastosInquirer).then((res) => {
-        resolve(askImportOfGastoPromp(res.gastoCategory));
+        resolve(askImportOfGastoPrompt(res.gastoCategory));
       });
     } catch (error) {
       reject(error);

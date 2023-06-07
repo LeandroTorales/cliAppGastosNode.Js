@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
-import { askNewGastoPrompt } from "./functionInquirer/askNewGastoPrompt.js";
+import { askNewGastoPrompt } from "./functionInquirer/importesGastos/askNewGastoPrompt.js";
+import { listMoreOptionsInquirer } from "./functionInquirer/otrasOpciones/otherOptionsPrompt.js";
 
 const inquirerFuncMain = async () => {
   let promptRun = true;
@@ -22,8 +23,8 @@ const inquirerFuncMain = async () => {
         await askNewGastoPrompt();
         break;
       case 2:
-        await otherOpcionsCLI();
-        // to do
+        await listMoreOptionsInquirer();
+        promptRun = false;
         break;
       case 99:
         promptRun = false;
